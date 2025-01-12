@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>로또 구매</title>
+</head>
+<body>
+    <h1>로또 구매</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">구매</button>
+    </form>
+</body>
+</html>

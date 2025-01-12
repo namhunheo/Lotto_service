@@ -1,0 +1,7 @@
+<form method="POST">
+    {% csrf_token %}
+    <label>
+        <input type="checkbox" name="is_auto" checked> 자동 구매
+    </label>
+    <button type="submit">구매</button>
+</form>
